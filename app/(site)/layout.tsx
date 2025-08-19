@@ -25,7 +25,7 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: {
     default: siteConfig.title,
-    template: `%s | ${siteConfig.name}`,
+    template: `%s | ${siteConfig.siteName}`,
   },
   description: siteConfig.description,
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'),
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: siteConfig.title,
     description: siteConfig.description,
     url: '/',
-    siteName: siteConfig.name,
+    siteName: siteConfig.siteName,
     images: [
       {
         url: '/opengraph-image.png',
