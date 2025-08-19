@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Work Sans', ui-sans-serif, system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-neutral-50 text-neutral-900;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+
+  /* Focus styles for accessibility */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-primary-500 ring-offset-2 ring-offset-white;
+  }
+
+  /* Skip to content link */
+  .skip-to-content {
+    @apply absolute -top-10 left-6 z-50 bg-primary-500 text-white px-4 py-2 rounded-md transition-transform duration-200;
+  }
+
+  .skip-to-content:focus {
+    @apply top-6;
+  }
+}
+
+@layer components {
+  /* Custom component styles */
+  .btn-primary {
+    @apply bg-primary-500 hover:bg-primary-600 text-white font-medium px-6 py-3 rounded-lg transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary-500 hover:bg-secondary-600 text-white font-medium px-6 py-3 rounded-lg transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-secondary-500 focus-visible:ring-offset-2;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white font-medium px-6 py-3 rounded-lg transition-all duration-200 focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-neutral-200 p-6 hover:shadow-md transition-shadow duration-200;
+  }
+
+  .prose-custom {
+    @apply prose prose-neutral max-w-prose mx-auto;
+  }
+
+  .prose-custom h1 {
+    @apply text-4xl font-bold text-neutral-900 mb-6;
+  }
+
+  .prose-custom h2 {
+    @apply text-[24px] font-semibold text-secondary-500 mb-4; /* dark purple, same bottom margin as p */
+  }
+
+  .prose-custom h3 {
+    @apply text-2xl font-semibold text-neutral-900 mb-3 mt-6;
+  }
+
+  .prose-custom p {
+    @apply text-lg leading-relaxed mb-4;
+  }
+
+  .prose-custom blockquote {
+    @apply border-l-4 border-primary-500 pl-6 italic text-neutral-700 my-6;
+  }
+
+  .prose-custom a {
+    @apply text-primary-500 hover:text-primary-600 underline decoration-2 underline-offset-2;
+  }
+
+  /* Content separator icon */
+  .content-separator {
+    @apply flex items-center justify-center my-8;
+  }
+
+  .content-separator::before {
+    content: '';
+    @apply w-8 h-0.5 bg-primary-500;
+  }
+
+  .content-separator::after {
+    content: '●';
+    @apply text-primary-500 mx-3 text-sm;
+  }
+
+  /* Masonry grid with neat distribution for 7 interviews */
+  .masonry-grid {
+    columns: 1;
+    column-gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .masonry-item {
+    break-inside: avoid;
+    margin-bottom: 2rem;
+    display: inline-block;
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .masonry-grid {
+      columns: 2;
+      column-gap: 2rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .masonry-grid {
+      columns: 3;
+      column-gap: 2.5rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .masonry-grid {
+      columns: 4;
+      column-gap: 2.5rem;
+    }
+  }
+
+  /* Card size variations with mouseover effects */
+  .interview-card-small,
+  .interview-card-large,
+  .interview-card-square,
+  .interview-card-wide,
+  .interview-card-medium,
+  .interview-card-large-square {
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .interview-card-small:hover,
+  .interview-card-large:hover,
+  .interview-card-square:hover,
+  .interview-card-wide:hover,
+  .interview-card-medium:hover,
+  .interview-card-large-square:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transform: scale(1.03) rotate(-1deg);
+  }
+
+  /* Mouseover effects for interview cards */
+  .interview-card-small:hover .interview-image,
+  .interview-card-large:hover .interview-image,
+  .interview-card-square:hover .interview-image,
+  .interview-card-wide:hover .interview-image,
+  .interview-card-medium:hover .interview-image,
+  .interview-card-large-square:hover .interview-image {
+    transform: scale(1.1);
+  }
+
+  .interview-card-small:hover .interview-name,
+  .interview-card-large:hover .interview-name,
+  .interview-card-square:hover .interview-name,
+  .interview-card-wide:hover .interview-name,
+  .interview-card-medium:hover .interview-name,
+  .interview-card-large-square:hover .interview-name {
+    color: #00A8FF;
+  }
+
+  .interview-card-small:hover .interview-arrow,
+  .interview-card-large:hover .interview-arrow,
+  .interview-card-square:hover .interview-arrow,
+  .interview-card-wide:hover .interview-arrow,
+  .interview-card-medium:hover .interview-arrow,
+  .interview-card-large-square:hover .interview-arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* Vertical color bars (not rounded) */
+  .blue-bar-vertical {
+    background: #00A8FF;
+    transition: all 0.3s ease;
+    width: 12px;
+    margin: 0 auto;
+  }
+
+  .blue-bar-vertical:hover {
+    background: #007EBE;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 168, 255, 0.3);
+  }
+
+  .dark-magenta-bar-vertical {
+    background: #650260;
+    transition: all 0.3s ease;
+    width: 12px;
+    margin: 0 auto;
+  }
+
+  .dark-magenta-bar-vertical:hover {
+    background: #7D256A;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(101, 2, 96, 0.3);
+  }
+
+  /* Interview image hover effects */
+  .interview-image {
+    transition: transform 0.5s ease;
+  }
+
+  .interview-name {
+    transition: color 0.3s ease;
+  }
+
+  .interview-arrow {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    opacity: 0;
+    transform: translateX(8px);
+    transition: all 0.5s ease;
+  }
+
+  .interview-arrow .arrow-circle {
+    width: 48px;
+    height: 48px;
+    background: #00A8FF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 168, 255, 0.3);
+  }
+
+  .interview-arrow .arrow-icon {
+    width: 24px;
+    height: 24px;
+    color: white;
+  }
+}
+
+@layer utilities {
+  /* Custom utility classes */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .container-custom {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .container-custom {
+      padding: 0 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container-custom {
+      padding: 0 2rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .container-custom {
+      max-width: 1280px;
+      padding: 0 2rem;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .container-custom {
+      max-width: 1400px;
+      padding: 0 2rem;
+    }
+  }
+
+  /* Reading progress bar */
+  .reading-progress {
+    @apply fixed top-0 left-0 w-full h-full bg-neutral-200 z-50;
+  }
+
+  .reading-progress-bar {
+    @apply h-full bg-primary-500 transition-all duration-200;
+  }
+}
+
+/* Print styles */
+@media print {
+  @page {
+    margin: 1in;
+    size: A4;
+  }
+
+  body {
+    @apply text-black bg-white;
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .page-break {
+    page-break-before: always;
+  }
+
+  .avoid-break {
+    page-break-inside: avoid;
+  }
+
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+
+  .prose-custom {
+    @apply max-w-none mx-0;
+  }
+
+  .prose-custom h1 {
+    @apply text-2xl mb-4;
+  }
+
+  .prose-custom h2 {
+    @apply text-xl mb-3;
+  }
+
+  .prose-custom h3 {
+    @apply text-lg mb-2;
+  }
+
+  .prose-custom p {
+    @apply text-sm mb-3;
+  }
+}
