@@ -131,7 +131,7 @@ export default function ArticleKwaliteitAnsPage() {
                         Ik ben blij dat de leeftijdsgrens voor cliëntenraadsleden is afgeschaft. Mensen boven de 72 kunnen nu ook actief blijven. En ik waardeer het contact met cliënten op beurzen en bijeenkomsten. Dat geeft energie! Ook de samenwerking met de SP-fractie in Den Bosch verloopt goed. We versterken elkaar. Die dwarsverbanden kunnen leggen, daar doe ik het voor.’
                       </p>
                       <p className="text-[19px] leading-8  mb-4">
-                        Lees ook het artikel met Kees over <a href={getNavbarMenuItems()[3]?.url} className="underline">Het nieuwe Re-integratie-model</a>.
+                        Lees ook het artikel met Kees over <a href={getNavbarMenuItems()[3]?.url} className="underline">Het nieuwe Re-integratie model</a>.
                       </p>
                       <ContentDivider src="/images/logo_uwv.svg" alt="Logo UWV cliëntenraad" />
                     </div>

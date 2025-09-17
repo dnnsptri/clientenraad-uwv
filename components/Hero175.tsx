@@ -2,8 +2,8 @@
 
 import { ArrowDown, CirclePlay } from "lucide-react";
 
-import { badgeVariants } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { badgeVariants } from "./ui/badge";
+import { Button } from "./ui/button";
 
 const Hero175 = () => {
   return (
