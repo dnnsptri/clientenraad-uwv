@@ -15,7 +15,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/Button";
 import { ContentDivider } from "@/components/ContentDivider";
 import FadeInSection from "@/components/FadeInSection";
 import { Separator } from "@/components/ui/separator";
