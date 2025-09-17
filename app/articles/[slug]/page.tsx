@@ -3,17 +3,14 @@ import { Hero50 } from '@/components/Hero50'
 import { articles, getHeroContent } from '@/lib/articles'
 import FadeInSection from '@/components/FadeInSection'
 
-interface PageProps {
-  params: { slug: string }
-}
-
-export default function ArticleDetailPage({ params }: PageProps) {
-  if (!params?.slug) notFound()
+export default async function ArticleDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params
+  if (!resolvedParams?.slug) notFound()
   
-  const article = articles.find(a => a.slug === params.slug)
+  const article = articles.find(a => a.slug === resolvedParams.slug)
   if (!article) notFound()
 
-  const heroContent = getHeroContent(params.slug);
+  const heroContent = getHeroContent(resolvedParams.slug);
 
   return (
     <main>
