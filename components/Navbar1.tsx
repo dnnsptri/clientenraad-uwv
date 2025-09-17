@@ -10,7 +10,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Button } from "./ui/Button";
+import { Button } from "./ui/button";
 import {
   NavigationMenu,
   NavigationMenuContent,

@@ -3,7 +3,7 @@
 import { ArrowDown, CirclePlay } from "lucide-react";
 
 import { badgeVariants } from "./ui/badge";
-import { Button } from "./ui/Button";
+import { Button } from "./ui/button";
 
 const Hero175 = () => {
   return (
