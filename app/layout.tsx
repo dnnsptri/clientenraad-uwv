@@ -6,7 +6,7 @@ import ReadingProgress from '@/components/ReadingProgress'
 import BackToTop from '@/components/BackToTop'
 
 export const metadata: Metadata = {
-  title: 'UWV Cliëntenraad Jaarverslag 2024',
+  title: 'UWV Cliëntenraad - Jaarverslag 2024',
   description: 'Online jaarverslag',
 }
 
