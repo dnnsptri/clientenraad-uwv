@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UWV Cliëntenraad 2024</title>
+    <meta name="description" content="UWV Cliëntenraad Jaarverslag 2024" />
+    <style>
+      :root { --bg:#0a1220; --card:#0e1729; --text:#e6edf6; --muted:#9fb0c5; --accent:#2dd4bf; }
+      * { box-sizing: border-box; }
+      html, body { height: 100%; }
+      body {
+        margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        background: radial-gradient(1200px 600px at 20% -10%, #13203b, transparent),
+                    radial-gradient(1000px 500px at 110% 10%, #0b1a31, transparent),
+                    var(--bg);
+        color: var(--text); display: grid; place-items: center; padding: 24px;
+      }
+      .card {
+        width: 100%; max-width: 720px; background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+        border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 24px; backdrop-filter: blur(6px);
+        box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+      }
+      .logo { display: flex; gap: 12px; align-items: center; color: var(--text); text-decoration: none; }
+      .logo img { height: 28px; }
+      h1 { margin: 16px 0 8px; font-size: 28px; }
+      p { margin: 8px 0 0; color: var(--muted); }
+      .actions { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
+      .btn { appearance: none; border: 1px solid rgba(255,255,255,0.14); background: #111a2e; color: var(--text); padding: 10px 14px; border-radius: 10px; text-decoration: none; font-weight: 600; }
+      .btn.primary { background: linear-gradient(135deg, #22c1c3, #2dd4bf); color: #0a1220; border: none; }
+      .small { font-size: 12px; color: var(--muted); margin-top: 16px; }
+      code { background: rgba(255,255,255,0.08); padding: 2px 6px; border-radius: 6px; }
+      .links { display: grid; gap: 6px; margin-top: 16px; }
+      .links a { color: var(--accent); text-decoration: none; }
+      .links a:hover { text-decoration: underline; }
+    </style>
+  </head>
+  <body>
+    <main class="card" role="main">
+      <a class="logo" href="/">
+        <img alt="UWV" src="/images/logo_uwv.svg" />
+        <strong>UWV Cliëntenraad</strong>
+      </a>
+      <h1>Statische back-up pagina</h1>
+      <p>De Next.js app kon niet laden. Dit is een statische noodpagina zodat bezoekers alsnog de belangrijkste onderdelen kunnen bereiken.</p>
+      <div class="actions">
+        <a class="btn primary" href="/">Startpagina</a>
+        <a class="btn" href="/foreword">Voorwoord</a>
+        <a class="btn" href="/articles/1uwv-maarten-oosterveld">1UWV</a>
+        <a class="btn" href="/articles/reintegratie-kees-van-blerck">Re-integratie</a>
+        <a class="btn" href="/articles/kwaliteit-hans-sijtsma">Kwaliteit</a>
+        <a class="btn" href="/colofon">Colofon</a>
+        <a class="btn" href="/downloads/UWV_clie%CC%88ntenraad_jaarverslag2024.pdf">PDF</a>
+      </div>
+      <div class="links">
+        <a href="/downloads/Bijlage_2_UWV_clientenraad_adviezen.pdf">Bijlage 2 · Adviezen</a>
+        <a href="/downloads/Bijlage_1_UWV_clientenraad_werkgroepen.pdf">Bijlage 1 · Werkgroepen</a>
+      </div>
+      <p class="small">Tip: controleer Vercel build logs en de <code>next.config.mjs</code> voor routing issues.</p>
+    </main>
+  </body>
+</html>
