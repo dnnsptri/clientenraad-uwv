@@ -12,7 +12,7 @@ export default function ArticleKwaliteitHansPage() {
         <Hero50 
           title="We moeten bruggen bouwen, geen barricades opwerpen"
           description="Hans Sijtsma:"
-          image="/images/header_Hans.jpg"
+          image="/images/header_hans.jpg"
         />
       </FadeInSection>
       <FadeInSection>
@@ -84,7 +84,7 @@ export default function ArticleKwaliteitHansPage() {
                       </p>
                       <TestimonialBluePhoto 
                          quote='Ik geloof niet in het conflictmodel - natuurlijk moeten we kritisch zijn, maar altijd met het doel samen verder te komen' 
-                         image={{ src: "/images/content_hans_1.jpg", alt: "Hans Sijtsma" }}
+                         image={{ src: "/images/content_Hans_1.jpg", alt: "Hans Sijtsma" }}
                       />
                       </div>
                   </div>

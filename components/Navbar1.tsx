@@ -88,7 +88,7 @@ const Navbar1 = ({
     },
   ],
   auth = {
-    download: { title: "Bekijk PDF", url: "/downloads/UWV_cliëntenraad_jaarverslag2024.pdf" },
+    download: { title: "Bekijk PDF", url: "/downloads/UWV_clientenraad_jaarverslag2024.pdf" },
   },
 }: Navbar1Props) => {
   return (

@@ -137,7 +137,7 @@ const Content4 = () => {
             Lees het jaarverslag 2024 in PDF
           </h3>
           <Button asChild size="lg" className="pdf-button">
-            <a href="/downloads/UWV_cliëntenraad_jaarverslag2024.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/downloads/UWV_clientenraad_jaarverslag2024.pdf" target="_blank" rel="noopener noreferrer">
               Download PDF
             </a>
           </Button>

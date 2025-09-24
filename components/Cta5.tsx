@@ -20,7 +20,7 @@ const Cta5 = () => {
               Wilt u het jaarverslag liever bekijken in PDF of zelfs printen? Dat kan. Download het complete rapport en lees het op uw eigen tempo, waar en wanneer u wilt.
             </p>
             <Button asChild className="pdf-button">
-              <a href="/downloads/UWV_cliëntenraad_jaarverslag2024.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="/downloads/UWV_clientenraad_jaarverslag2024.pdf" target="_blank" rel="noopener noreferrer">
                 Download PDF
               </a>
             </Button>

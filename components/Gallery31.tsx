@@ -14,7 +14,7 @@ const featureData = [
   },
   {
     imgClass: "md:h-[320px] !w-full rounded-sm lg:col-span-2",
-    imgsrc: "/images/header_Hans.jpg",
+    imgsrc: "/images/header_hans.jpg",
     ptitle: "Kwaliteit door Bruggen Bouwen",
     name: "Hans Sijtsma (Noord)",
     link: "/articles/kwaliteit-hans-sijtsma",
