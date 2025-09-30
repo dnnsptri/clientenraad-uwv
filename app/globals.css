@@ -247,6 +247,10 @@ body, p, .body-text, .prose p {
   padding: 4rem 2rem; /* 64px top/bottom, 32px left/right */
   border-radius: 4px;
   position: relative;
+  margin-top: 4rem; /* ensure mobile spacing above decorative element */
+  overflow: visible; /* prevent clipping on mobile */
+  z-index: 0; /* keep below subsequent content */
+  margin-bottom: 1.5rem;
 }
 
 .quote-bubble::before {
@@ -260,6 +264,7 @@ body, p, .body-text, .prose p {
   background-repeat: no-repeat;
   background-size: contain;
   transform: translateY(1px); /* overlap by 1px to remove gap */
+  pointer-events: none;
 }
 
 /* Quote bubble with tail (purple) */
@@ -269,6 +274,10 @@ body, p, .body-text, .prose p {
   padding: 4rem 2rem;
   border-radius: 4px;
   position: relative;
+  margin-top: 4rem; /* ensure mobile spacing above decorative element */
+  overflow: visible; /* prevent clipping on mobile */
+  z-index: 0; /* keep below subsequent content */
+  margin-bottom: 1.5rem;
 }
 
 .quote-bubble-purple::before {
@@ -282,6 +291,15 @@ body, p, .body-text, .prose p {
   background-repeat: no-repeat;
   background-size: contain;
   transform: translateY(1px);
+  pointer-events: none;
+}
+
+/* Mobile spacing fix so following content never hides under the quote */
+@media (max-width: 768px) {
+  .quote-bubble,
+  .quote-bubble-purple {
+    margin-bottom: 6rem;
+  }
 }
 
 /* Light blue callout box */

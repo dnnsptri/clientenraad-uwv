@@ -56,11 +56,11 @@ const Gallery31 = () => {
         </div>
         <div className="relative mt-16 mb-50 grid w-full grid-cols-1 justify-center gap-[12px] md:grid-cols-2 lg:grid-cols-4">
           {featureData.map((item, index) => {
-            const articleSlug = articles[index]?.slug;
+            const href = item.link;
 
-            if (articleSlug) {
+            if (href) {
               return (
-                <Link key={index} href={`/articles/${articleSlug}`} className="contents">
+                <Link key={index} href={href as any} className="contents">
                   <DirectionAwareHover
                     className={item.imgClass}
                     imageUrl={item.imgsrc}

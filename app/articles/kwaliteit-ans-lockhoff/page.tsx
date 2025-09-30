@@ -16,7 +16,7 @@ export default function ArticleKwaliteitAnsPage() {
         />
       </FadeInSection>
       <FadeInSection>
-        <div className="py-4">
+        <div className="py-4 overflow-visible">
           <div className="container">
             <div className="flex justify-center">
               <div className="w-full max-w-5xl">
@@ -45,7 +45,7 @@ export default function ArticleKwaliteitAnsPage() {
       </FadeInSection>
 
       <FadeInSection>
-        <div className="py-4">
+        <div className="py-4 overflow-visible">
           <div className="container">
             <div className="flex justify-center">
               <div className="w-full max-w-5xl">
@@ -96,7 +96,7 @@ export default function ArticleKwaliteitAnsPage() {
       </FadeInSection>
 
       <FadeInSection>
-        <div className="py-4">
+        <div className="py-4 overflow-visible">
           <div className="container">
             <div className="flex justify-center">
               <div className="w-full max-w-5xl">
