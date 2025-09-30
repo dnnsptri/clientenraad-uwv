@@ -1,4 +1,4 @@
-import { Hero50 } from '@/components/Hero50'
+import { HeroBlue } from '@/components/Hero50'
 import FadeInSection from '@/components/FadeInSection'
 import { ContentDivider } from '@/components/ContentDivider'
 import { TestimonialBlue } from '@/components/TestimonialBlue'
@@ -9,7 +9,7 @@ export default function ArticleMoreelBeraadPage() {
   return (
     <main>
       <FadeInSection>
-        <Hero50 
+        <HeroBlue 
           title="Rechtmatigheid leidt niet altijd tot rechtvaardigheid"
           description="Theo Hermsen & Marloes Barendrecht:"
           image="/images/header_theo_marloes.jpg"

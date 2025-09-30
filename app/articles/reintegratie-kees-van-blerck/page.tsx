@@ -1,15 +1,15 @@
-import { Hero50 } from '@/components/Hero50'
+import { HeroPurple } from '@/components/HeroPurple'
 import FadeInSection from '@/components/FadeInSection'
 import { ContentDivider } from '@/components/ContentDivider'
-import { TestimonialBlue } from '@/components/TestimonialBlue'
-import { TestimonialBluePhoto } from '@/components/TestimonialBluePhoto'
+import { TestimonialPurple } from '@/components/TestimonialPurple'
+import { TestimonialPurplePhoto } from '@/components/TestimonialPurplePhoto'
 import { getNavbarMenuItems } from '@/lib/articles'
 
 export default function ArticleReintegratieKeesPage() {
   return (
     <main>
       <FadeInSection>
-        <Hero50 
+        <HeroPurple 
           title="Re-integratie begint bij écht luisteren en maatwerk"
           description="Kees van Blerck:"
           image="/images/header_kees.jpg"
@@ -26,7 +26,7 @@ export default function ArticleReintegratieKeesPage() {
                       <p className="intro leading-7 mb-6">
                         Re-integratie bij UWV is in beweging. Niet langer draait het alleen om regels en procedures, maar steeds meer om het goede gesprek: een gesprek waarin de cliënt zich gehoord, geholpen en gezien voelt. <b>Kees van Blerck</b> is Staf Arbeidsdeskundige bij het Werkbedrijf in de regio Arnhem-Nijmegen. Vanuit die functie werkt hij sinds 2018 op dagelijkse basis aan het re-integratieproces van cliënten. In het kader van het jaarverslag van de cliëntenraden vertelt hij over het integratief gedragsmodel, de praktijk van maatwerk en de impact op cliënten. ‘Het draait om aandacht, autonomie en realisme – en dat vraagt om een persoonlijke benadering.’<br /><br />
                       </p>
-                      <p className=" leading-8  mb-4">
+                      <p className="text-[19px] leading-8  mb-4">
                         Eigenlijk had hij leraar willen worden, laat Kees zich bij aanvang van het gesprek ontvallen. Maar, zoals dat gaat liepen de dingen anders; na de lerarenopleiding begon hij in de gezondheidszorg waar hij patiënten hielp op het gebied van gedragsproblematiek. Later werd hij ‘jobcoach’ en werkte bij diverse scholingsinstituten en integratiebureaus. Vanaf 2002 werk hij als arbeidsdeskundige en vanaf 2013 bij UWV. ‘Hier kan ik mijn passie voor re-integratie op een mooie manier voortzetten. De cases hier zijn zo uiteenlopend, maar altijd bijzonder.’ 
                       </p>
                       <p className="text-[19px] leading-8  mb-4">
@@ -61,7 +61,7 @@ export default function ArticleReintegratieKeesPage() {
                       <p className="text-[19px] leading-8  mb-4">
                         Stel, je hebt een cliënt tegenover je die al jaren uit het arbeidsproces is. Dan kun je niet meteen beginnen over vacatures. Je moet eerst begrijpen wat iemand heeft meegemaakt, waar de pijn zit, en wat iemand belangrijk vindt in het leven. Pas als je dat weet, kun je samen stappen zetten richting werk. Het nieuwe model helpt om dat proces gestructureerd aan te pakken.’
                       </p>
-                      <TestimonialBlue 
+                      <TestimonialPurple 
                          quote='Cliënten voelen zich serieus genomen. Dat is belangrijk want re-integratie is niet alleen een praktisch, maar ook een emotioneel proces'
                       />
                       <h2 className="scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0">
@@ -76,7 +76,7 @@ export default function ArticleReintegratieKeesPage() {
                       <p className="text-[19px] leading-8  mb-4">
                         ‘Het model helpt ons om te begrijpen waar iemand staat, wat iemand nodig heeft, en hoe we daar als UWV op kunnen aansluiten. Het is daarmee een manier om empathie en maatwerk expliciet met methodiek te kunnen combineren. Het gesprek bestaat uit verschillende fasen: contact maken, verkennen, doelen stellen, en actie ondernemen. In elke fase gebruik je andere gesprekstechnieken. Bijvoorbeeld: in de verkenningsfase stel je open vragen en luister je vooral. In de actiefase geef je meer richting en maak je afspraken. 
                       </p>
-                      <TestimonialBluePhoto 
+                      <TestimonialPurplePhoto 
                         quote='Dit model vraagt om training en oefening. Je moet als professional op een andere manier leren luisteren en vragen stellen'
                         image={{ src: "/images/content_kees_1.jpg", alt: "Kees van Blerck" }}
                       />
@@ -118,7 +118,7 @@ export default function ArticleReintegratieKeesPage() {
                       <p className="text-[19px] leading-8  mb-4">
                         ‘Door te reflecteren, feedback te vragen en geven, en te blijven leren. Ik geef zelf ook trainingen aan collega’s, en daarin merk ik hoe waardevol het is om ervaringen uit te wisselen. Zo ontstaat snel consensus over wat ons drijft: respect, dienstverlenend zijn, samenwerken. Die waarde-gedreven vorm van werken helpt ons om niet enkel vanuit regels te denken, maar juist ook vanuit waar de cliënt goed aan doet.’
                       </p>
-                      <TestimonialBlue 
+                      <TestimonialPurple 
                          quote='Ik werk graag met ervaringsdeskundigen. Zij brengen een ander perspectief in, wat helpt om blinde vlekken te voorkomen’'
                       />
                       <h2 className="scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0">
@@ -156,7 +156,7 @@ export default function ArticleReintegratieKeesPage() {
                       <p className="text-[19px] leading-8  mb-4">
                         ‘Ik hoop dat het integratief gedragsmodel in de toekomst breed zal worden toegepast binnen UWV. Niet als verplicht format, maar als hulpmiddel om het gesprek te verbeteren. Ik geloof dat we daarmee het verschil kunnen maken voor cliënten. Als mensen zich gezien en gesteund voelen, zijn ze beter in staat om stappen te zetten richting werk. En dat is uiteindelijk waar we het voor doen.
                       </p>
-                      <TestimonialBluePhoto 
+                      <TestimonialPurplePhoto 
                         quote='De stip op de horizon is dat dit model een vaste plek krijgt in onze werkwijze, zodat we de mens achter het dossier blijven zien'
                         image={{ src: "/images/content_kees_2.jpg", alt: "Kees van Blerck" }}
                       />

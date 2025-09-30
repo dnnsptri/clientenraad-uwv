@@ -1,20 +1,19 @@
-
-interface HeroBlueProps {
+interface HeroPurpleProps {
   title: string;
   description: string;
   image?: string;
 }
 
-const HeroBlue = ({ 
+const HeroPurple = ({ 
   title = "Community & business data, centralized",
   description = "Showcase the value of your community to the business. Talkbase sets the stage for successful cross-collaboration among community teams working with customer, marketing, sales, and product development.",
   image = "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
-}: HeroBlueProps) => {
+}: HeroPurpleProps) => {
   return (
     <section className="relative">
-      {/* Background image with fixed 680px height */}
+      {/* Background image with fixed 720px height */}
       <div 
-        className="h-[680px] bg-cover bg-center bg-no-repeat"
+        className="h-[720px] bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${image})` }}
       />
       
@@ -22,21 +21,21 @@ const HeroBlue = ({
       <div className="relative -mt-24 z-10">
         <div className="container">
           <div className="relative mx-auto max-w-5xl">
-            {/* Element positioned above the left edge of the blue box */}
+            {/* Purple decorative element above the left edge of the purple box */}
             <div className="absolute -top-24 left-0 z-20">
               <img 
-                src="/images/element_top.svg" 
+                src="/images/element_top_purple.svg" 
                 alt="Decorative element" 
                 className="w-32 h-32 object-contain"
               />
             </div>
-            <div className="rounded-sm p-20 text-left h-[360px] flex flex-col justify-center" style={{ backgroundColor: 'var(--blue)', boxShadow: 'none', color: 'var(--white)' }}>
-            <p className="pt-2 lg:text-xl">
-              {description}
-            </p>
-            <h1 className="text-balance text-4xl font-medium lg:text-6xl mt-10">
-              {title}
-            </h1>
+            <div className="rounded-sm p-20 text-left h-[360px] flex flex-col justify-center" style={{ backgroundColor: 'var(--purple)', boxShadow: 'none', color: 'var(--white)' }}>
+              <p className="pt-2 lg:text-xl">
+                {description}
+              </p>
+              <h1 className="text-balance text-4xl font-medium lg:text-6xl mt-10">
+                {title}
+              </h1>
             </div>
           </div>
         </div>
@@ -45,4 +44,6 @@ const HeroBlue = ({
   );
 };
 
-export { HeroBlue };
+export { HeroPurple };
+
+

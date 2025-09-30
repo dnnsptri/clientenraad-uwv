@@ -1,6 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
-interface TestimonialBlueProps {
+interface TestimonialPurpleProps {
   quote?: string;
   image?: {
     src: string;
@@ -16,7 +16,7 @@ interface TestimonialBlueProps {
   };
 }
 
-const TestimonialBluePhoto = ({
+const TestimonialPurplePhoto = ({
   quote = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Elig doloremque mollitia fugiat omnis! Porro facilis quo animi consequatur. Explicabo.",
   image = {
     src: "/images/header_maarten.jpg",
@@ -30,7 +30,7 @@ const TestimonialBluePhoto = ({
       alt: "Customer Name",
     },
   },
-}: TestimonialBlueProps) => {
+}: TestimonialPurpleProps) => {
   return (
     <div className="relative">
       <section className="py-0">
@@ -38,7 +38,7 @@ const TestimonialBluePhoto = ({
           <div className="grid grid-cols-12 items-center gap-6 lg:gap-18">
             {/* Quote left */}
             <div className="col-span-12 lg:col-span-5 z-10 lg:-mr-20 relative">
-              <div className="quote-bubble text-left">
+              <div className="quote-bubble-purple text-left">
                 <p className="font-regular lg:text-3xl leading-relaxed text-left">
                   &ldquo;{quote}&rdquo;
                 </p>
@@ -61,4 +61,4 @@ const TestimonialBluePhoto = ({
   );
 };
 
-export { TestimonialBluePhoto };
+export { TestimonialPurplePhoto };

@@ -155,14 +155,14 @@ h1 {
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
   line-height: 1.5; /* 150% line spacing */
-  letter-spacing: 0.5px;
+  letter-spacing: 0.25px;
 }
 
 h1.blank {
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
   line-height: 1.5; /* 150% line spacing */
-  letter-spacing: 0.5px;
+  letter-spacing: 0.25px;
   text-align: left;
   color: var(--purple);
 }
@@ -173,7 +173,7 @@ h2 {
   color: var(--purple); /* purple */
   margin-top: 56px;
   margin-bottom: 24px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.25px;
 }
 
 h2.blue {
@@ -182,7 +182,7 @@ h2.blue {
   color: var(--blue); /* blue */
   margin-top: 56px;
   margin-bottom: 24px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.25px;
 }
 
 h3 {
@@ -249,16 +249,39 @@ body, p, .body-text, .prose p {
   position: relative;
 }
 
-.quote-bubble::after {
+.quote-bubble::before {
   content: "";
   position: absolute;
-  left: 2.5rem;
-  bottom: -22px;
-  width: 0;
-  height: 0;
-  border-left: 22px solid transparent;
-  border-right: 22px solid transparent;
-  border-top: 22px solid var(--blue);
+  left: 0; /* align to left edge */
+  bottom: 100%;
+  width: 96px;
+  height: 44px;
+  background-image: url('/images/element_top.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translateY(1px); /* overlap by 1px to remove gap */
+}
+
+/* Quote bubble with tail (purple) */
+.quote-bubble-purple {
+  background-color: var(--purple);
+  color: var(--white);
+  padding: 4rem 2rem;
+  border-radius: 4px;
+  position: relative;
+}
+
+.quote-bubble-purple::before {
+  content: "";
+  position: absolute;
+  left: 0; /* align to left edge */
+  bottom: 100%;
+  width: 96px;
+  height: 44px;
+  background-image: url('/images/element_top_purple.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translateY(1px);
 }
 
 /* Light blue callout box */

@@ -65,7 +65,13 @@ const Navbar1 = ({
       url: "#",
       items: getNavbarMenuItems().map((item) => ({
         ...item,
-        icon: <UserRound className="size-8 shrink-0" />
+        icon: (
+          <img
+            src={item.image}
+            alt={item.title}
+            className="size-12 shrink-0 rounded-sm object-cover"
+          />
+        ),
       })),
     },
     {
@@ -256,7 +262,7 @@ const SubMenuLink = ({ item }: { item: MenuItem }) => {
     >
       <div className="text-foreground flex-shrink-0">{item.icon}</div>
       <div className="flex-1">
-        <div className="text-sm font-semibold mb-1">{item.title}</div>
+        <div className="text-lg font-semibold mb-1">{item.title}</div>
         {item.description && (
           <p className=" text-sm leading-relaxed">
             {item.description}

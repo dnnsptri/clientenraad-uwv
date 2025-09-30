@@ -1,15 +1,15 @@
-import { Hero50 } from '@/components/Hero50'
+import { HeroPurple } from '@/components/HeroPurple'
 import FadeInSection from '@/components/FadeInSection'
 import { ContentDivider } from '@/components/ContentDivider'
-import { TestimonialBlue } from '@/components/TestimonialBlue'
-import { TestimonialBluePhoto } from '@/components/TestimonialBluePhoto'
+import { TestimonialPurple } from '@/components/TestimonialPurple'
+import { TestimonialPurplePhoto } from '@/components/TestimonialPurplePhoto'
 import { getNavbarMenuItems } from '@/lib/articles'
 
 export default function ArticleKwaliteitHansPage() {
   return (
     <main>
       <FadeInSection>
-        <Hero50 
+        <HeroPurple 
           title="We moeten bruggen bouwen, geen barricades opwerpen"
           description="Hans Sijtsma:"
           image="/images/header_hans.jpg"
@@ -64,7 +64,7 @@ export default function ArticleKwaliteitHansPage() {
                       <p className="text-[19px] leading-8  mb-4">
                         ‘Niet structureel, en dat is iets wat we willen verbeteren. We krijgen wel input via leden van de raad die cliënten begeleiden, maar het directe contact met de achterban is beperkt. We willen als raad zichtbaarder worden, bijvoorbeeld door aanwezig te zijn op banenbeurzen of bijeenkomsten te organiseren voor cliënten die een keuring moeten ondergaan. Dat zou ook helpen om onze rol beter uit te leggen.’
                       </p>
-                      <TestimonialBlue 
+                      <TestimonialPurple 
                          quote='De lijnen met het management zijn gelukkig kort - we merken daarmee dat onze signalen serieus worden genomen'
                       />
                       <h2 className="scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0">
@@ -82,7 +82,7 @@ export default function ArticleKwaliteitHansPage() {
                       <p className="text-[19px] leading-8  mb-4">
                         Niet alle medewerkers van UWV weten overigens precies wat de cliëntenraad doet. Sommigen associëren ons vooral met het management, wat soms zelfs een belemmering kan zijn in het contact. Ook het contact met cliëntenpanels is beperkt, terwijl daar juist kansen liggen om ervaringen op te halen. We willen als raad duidelijker gaan maken wie we zijn, wat we doen en waar we wel en niet voor zijn.’
                       </p>
-                      <TestimonialBluePhoto 
+                      <TestimonialPurplePhoto 
                          quote='Ik geloof niet in het conflictmodel - natuurlijk moeten we kritisch zijn, maar altijd met het doel samen verder te komen' 
                          image={{ src: "/images/content_Hans_1.jpg", alt: "Hans Sijtsma" }}
                       />
@@ -115,7 +115,7 @@ export default function ArticleKwaliteitHansPage() {
                       <p className="text-[19px] leading-8  mb-4">
                         ‘Investeer ook in een goede relatie met het UWV-management. Zorg dat je zichtbaar bent, ook in werkgroepen en landelijke overleggen. En zorg voor een goede sfeer binnen je eigen raad, dat maakt het werk als raadslid aantrekkelijker. Wij merken allemaal dat het tegenwoordig lastig is om commissies gevuld te krijgen. Formeel hadden we tot voor kort zestien leden, maar in de praktijk zijn er nu zo’n acht tot tien actief. Dat fluctueert. We denken daarom na over een andere vergaderstructuur en themadagen als toegankelijker alternatief voor commissies. Maar iets eenvoudigs als een goede lunch helpt soms ook om mensen naar een vergadering te trekken!’
                       </p>
-                      <TestimonialBlue 
+                      <TestimonialPurple 
                          quote='Het is lastig om vrijwilligers te vinden én te behouden - Als UWV wil dat cliëntenraden een serieus instrument blijven moet daar naar gekeken worden'
                       />
                       <h2 className="scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0">

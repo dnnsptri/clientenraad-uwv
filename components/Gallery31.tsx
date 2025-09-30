@@ -56,12 +56,11 @@ const Gallery31 = () => {
         </div>
         <div className="relative mt-16 mb-50 grid w-full grid-cols-1 justify-center gap-[12px] md:grid-cols-2 lg:grid-cols-4">
           {featureData.map((item, index) => {
-            const isFirstArticle = index === 0;
-            const articleSlug = articles[0]?.slug;
-            
-            if (isFirstArticle && articleSlug) {
+            const articleSlug = articles[index]?.slug;
+
+            if (articleSlug) {
               return (
-                <Link key={index} href={`/articles/${articleSlug}`}>
+                <Link key={index} href={`/articles/${articleSlug}`} className="contents">
                   <DirectionAwareHover
                     className={item.imgClass}
                     imageUrl={item.imgsrc}
@@ -72,7 +71,7 @@ const Gallery31 = () => {
                 </Link>
               );
             }
-            
+
             return (
               <DirectionAwareHover
                 key={index}

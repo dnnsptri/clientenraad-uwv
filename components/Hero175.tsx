@@ -27,7 +27,7 @@ const Hero175 = () => {
           <div className="mt-4 flex items-center gap-2">
             <Button
               asChild
-              className="flex h-fit items-center gap-2 rounded-md px-3.5 py-2.5 text-sm font-medium"
+              className="pdf-button"
             >
               <a 
                 href="#artikelen" 

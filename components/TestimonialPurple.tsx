@@ -24,11 +24,11 @@ const TestimonialPurple = ({
   },
 }: TestimonialPurpleProps) => {
   return (
-    <div className="relative mt-24">
+    <div className="relative mt-32">
       {/* Element positioned outside the blue box */}
       <div className="absolute -top-24 -left-0 z-20">
         <img 
-          src="/images/element_top.svg" 
+          src="/images/element_top_purple.svg" 
           alt="Decorative element" 
           className="w-32 h-32 object-contain"
         />
@@ -36,7 +36,7 @@ const TestimonialPurple = ({
       <section className="pt-16 testimonial-purple">
       <div className="container">
         <div className="flex flex-col items-start justify-center text-left min-h-[200px]">
-          <p className="max-w-4xl px-8 font-regular lg:text-3xl text-left">
+          <p className="mb-16 max-w-4xl px-8 font-regular lg:text-3xl text-left">
             &ldquo;{quote}&rdquo;
           </p>
         </div>

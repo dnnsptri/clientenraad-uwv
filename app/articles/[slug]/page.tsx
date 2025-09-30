@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation'
-import { Hero50 } from '@/components/Hero50'
+import { HeroBlue } from '@/components/Hero50'
 import { articles, getHeroContent } from '@/lib/articles'
 import FadeInSection from '@/components/FadeInSection'
 
@@ -15,7 +15,7 @@ export default async function ArticleDetailPage({ params }: { params: Promise<{ 
   return (
     <main>
       <FadeInSection>
-        <Hero50 
+        <HeroBlue 
           title={heroContent.title}
           description={heroContent.description}
           image={heroContent.image}

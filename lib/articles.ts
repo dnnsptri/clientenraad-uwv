@@ -20,7 +20,7 @@ export const articles: Article[] = [
     description: "Eric & Petra in gesprek met Maarten Oosterveld (SMZ)",
     content: "Door 1UWV wordt er niet meer gepingpongd met de cliënt",
     author: "Maarten Oosterveld (SMZ)",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-3.svg"
+    image: "/images/header_maarten.jpg"
   },
   {
     slug: "kwaliteit-hans-sijtsma",
@@ -28,7 +28,7 @@ export const articles: Article[] = [
     description: "Hans Sijtsma (Noord) in gesprek met Dick",
     content: "We moeten bruggen bouwen, geen barricades opwerpen",
     author: "Hans Sijtsma (Noord)",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg"
+    image: "/images/header_hans.jpg"
   },
   {
     slug: "kwaliteit-ans-lockhoff",
@@ -36,7 +36,7 @@ export const articles: Article[] = [
     description: "Ans Lockhoff (MOB) in gesprek met Gerard",
     content: "Cliënten verdienen meer dan een systeemmatige benadering",
     author: "Ans Lockhoff (MOB)",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-2.svg"
+    image: "/images/header_ans.jpg"
   },
   {
     slug: "reintegratie-kees-van-blerck",
@@ -44,14 +44,14 @@ export const articles: Article[] = [
     description: "Eric en Petra in gesprek met Kees van Blerck",
     content: "Re-integratie begint bij écht luisteren en maatwerk",
     author: "Kees van Blerck (Re-integratie)",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-4.svg"
+    image: "/images/header_kees.jpg"
   },
   {
     slug: "moreel-beraad-hermsen-barendrecht",
     title: "Moreel beraad",
     description: "Eric in gesprek met Theo Hermsen (SMZ) en Marloes Barendrecht (SMZ)",
     author: "Theo Hermsen en Marloes Barendrecht (SMZ)",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-5.svg"
+    image: "/images/header_theo_marloes.jpg"
   }
 ];
 
@@ -78,6 +78,7 @@ export const getNavbarMenuItems = () => {
   return articles.map(article => ({
     title: article.title,
     description: article.description,
-    url: `/articles/${article.slug}`
+    url: `/articles/${article.slug}`,
+    image: article.image,
   }));
 };
