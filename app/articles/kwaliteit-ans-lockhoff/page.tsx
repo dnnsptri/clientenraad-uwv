@@ -75,7 +75,7 @@ export default function ArticleKwaliteitAnsPage() {
                       </p>
                       <TestimonialBluePhoto 
                          quote='De communicatie is soms wat stroef, daardoor vinden we nog vaak het hetzelfde wiel opnieuw uit'
-                         image={{ src: "/images/content_ans_1.jpg", alt: "Ans Lockhoff" }}
+                         image={{ src: "/images/content_Ans_1.jpg", alt: "Ans Lockhoff" }}
                       />
                       <h2 className="scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0">
                         Wat zou er volgens jou moeten veranderen aan die communicatie?

@@ -73,7 +73,7 @@ export default function Article1UWVPage() {
                       </p>
                       <TestimonialBluePhoto 
                         quote='Dit doen we naast ons gewone werk,uiteindelijk voor een betere UWV-dienstverlening en -ervaring bij de klant'
-                        image={{ src: "/images/content_maarten_1.jpg", alt: "Maarten Oosterveld" }}
+                        image={{ src: "/images/content_Maarten_1.jpg", alt: "Maarten Oosterveld" }}
                       />
                     </div>
                   </div>
@@ -142,7 +142,7 @@ export default function Article1UWVPage() {
                       </p>
                       <TestimonialBluePhoto 
                         quote='Dit is geen formule die alle capaciteitsproblemen van tafel veegt – wel wordt de “klantreis” efficiënter doorlopen’'
-                        image={{ src: "/images/content_maarten_2.jpg", alt: "Maarten Oosterveld" }}
+                        image={{ src: "/images/content_Maarten_2.jpg", alt: "Maarten Oosterveld" }}
                       />
                       <h2 className="scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0">
                         Gebrek aan capaciteit was een aanleiding om te beginnen met <em>1UWV</em>, gaat dat nu beter?

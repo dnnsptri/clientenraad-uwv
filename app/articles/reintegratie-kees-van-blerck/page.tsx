@@ -78,7 +78,7 @@ export default function ArticleReintegratieKeesPage() {
                       </p>
                       <TestimonialPurplePhoto 
                         quote='Dit model vraagt om training en oefening. Je moet als professional op een andere manier leren luisteren en vragen stellen'
-                        image={{ src: "/images/content_kees_1.jpg", alt: "Kees van Blerck" }}
+                        image={{ src: "/images/content_Kees_1.jpg", alt: "Kees van Blerck" }}
                       />
                       <p className="text-[19px] leading-8  mb-4">
                         Maar het mooie is dat het model flexibel is: je kunt het aanpassen aan de situatie en de persoon. Zo kom je tot de essentie van iemands motivaties, obstakels, drijfveren in werk en mogelijkheden op de arbeidsmarkt.’
@@ -158,7 +158,7 @@ export default function ArticleReintegratieKeesPage() {
                       </p>
                       <TestimonialPurplePhoto 
                         quote='De stip op de horizon is dat dit model een vaste plek krijgt in onze werkwijze, zodat we de mens achter het dossier blijven zien'
-                        image={{ src: "/images/content_kees_2.jpg", alt: "Kees van Blerck" }}
+                        image={{ src: "/images/content_Kees_2.jpg", alt: "Kees van Blerck" }}
                       />
                        <p className="text-[19px] leading-8  mb-4">
                         Er zijn bewegingen merkbaar: presentaties, trainingen en pilots. Tegelijkertijd is UWV een grote organisatie in verandering, dus het kost tijd. Ik zie mezelf als ambassadeur van het model en probeer het in Arnhem en Nijmegen verder te brengen. Landelijk zijn er ook initiatieven, maar het is nog geen standaard. De stip op de horizon is voor mij dat het model een vaste plek krijgt in onze werkwijze, zodat we de mens achter het dossier blijven zien.’ 

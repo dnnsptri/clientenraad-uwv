@@ -76,7 +76,7 @@ export default function ArticleMoreelBeraadPage() {
                       </p>
                       <TestimonialBluePhoto 
                         quote='Medisch en arbeidsdeskundig klopte het, maar de impact voor de client was dermate groot dat wij er buikpijn van kregen'
-                        image={{ src: "/images/content_theo_1.jpg", alt: "Theo Hermsen" }}
+                        image={{ src: "/images/content_Theo_1.jpg", alt: "Theo Hermsen" }}
                       />
                       <h2 className="scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0">
                         Wanneer komt een casus bij Moreel Beraad?
@@ -143,7 +143,7 @@ export default function ArticleMoreelBeraadPage() {
                       </p>
                       <TestimonialBluePhoto 
                         quote='Met een zeven-stappenplan en de methode “morele oordeelsvorming” dwingt het Moreel beraad je dieper na te denken over je casus'
-                        image={{ src: "/images/content_marloes_1.jpg", alt: "Marloes Barendrecht" }}
+                        image={{ src: "/images/content_Marloes_1.jpg", alt: "Marloes Barendrecht" }}
                       />
                     </div>
                   </div>
