@@ -37,7 +37,7 @@ const TestimonialPurplePhoto = ({
         <div className="container">
           <div className="grid grid-cols-12 items-center gap-6 lg:gap-18">
             {/* Quote left */}
-            <div className="col-span-12 lg:col-span-5 z-10 lg:-mr-20 relative">
+            <div className="col-span-12 lg:col-span-5 z-10 lg:-mr-20 relative order-2 lg:order-1">
               <div className="quote-bubble-purple text-left">
                 <p className="font-regular lg:text-3xl leading-relaxed text-left">
                   &ldquo;{quote}&rdquo;
@@ -45,7 +45,7 @@ const TestimonialPurplePhoto = ({
               </div>
             </div>
             {/* Photo right */}
-            <div className="col-span-12 lg:col-span-7">
+            <div className="col-span-12 lg:col-span-7 order-1 lg:order-2">
               <div className="relative w-full overflow-hidden rounded-md">
                 <img
                   src={image.src}
