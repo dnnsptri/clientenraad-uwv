@@ -32,7 +32,7 @@ const TestimonialPurplePhoto = ({
   },
 }: TestimonialPurpleProps) => {
   return (
-    <div className="relative">
+    <div className="relative my-32">
       <section className="py-0 overflow-visible">
         <div className="container">
           <div className="grid grid-cols-12 items-center gap-6 lg:gap-18">
