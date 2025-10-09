@@ -87,7 +87,7 @@ const Content4 = () => {
           <div className="mt-9 flex justify-center">
             <div className="w-full max-w-5xl">
               <h1 className="blank text-balance text-4xl md:text-5xl">
-                Voorwoord van de UWV Cliëntenraad
+                Voorwoord van het redactieoverleg
               </h1>
             </div>
           </div>
