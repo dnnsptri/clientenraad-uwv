@@ -31,11 +31,11 @@ export const articles: Article[] = [
     image: "/images/header_hans.jpg"
   },
   {
-    slug: "kwaliteit-ans-lockhoff",
+    slug: "kwaliteit-ans-lokhoff",
     title: "Menselijke maat in kwaliteit",
-    description: "Ans Lockhoff (MOB) in gesprek met Gerard",
+    description: "Ans Lokhoff (MOB) in gesprek met Gerard",
     content: "Cliënten verdienen meer dan een systeemmatige benadering",
-    author: "Ans Lockhoff (MOB)",
+    author: "Ans Lokhoff (MOB)",
     image: "/images/header_ans.jpg"
   },
   {

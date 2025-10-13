@@ -23,8 +23,8 @@ const featureData = [
     imgClass: "md:h-70 col-span-1 !h-full !w-full rounded-sm lg:row-span-2",
     imgsrc: "/images/header_ans.jpg",
     ptitle: "Menselijke maat in kwaliteit",
-    name: "Ans Lockhoff (MOB)",
-    link: "/articles/kwaliteit-ans-lockhoff",
+    name: "Ans Lokhoff (MOB)",
+    link: "/articles/kwaliteit-ans-lokhoff",
   },
   {
     imgClass: "md:h-[320px] !w-full rounded-sm lg:col-span-2",
