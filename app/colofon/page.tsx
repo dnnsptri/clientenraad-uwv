@@ -107,7 +107,7 @@ export default function ColofonPage() {
                       - Eric Beukema (cliëntenraad Overijssel en Gelderland-Noord, lid Redactieoverleg)<br />
                       - Else te Brake (centrale cliëntenraad, lid Redactieoverleg)<br />
                       - Dick Tolsma (cliëntenraad Midden- en Oost-Brabant, lid Redactieoverleg)<br />
-                      - André Houting (cliëntenraad Rijnmond, lid Redactieoverleg)<br /><br />
+                      - André Houting (cliëntenraad Rijnmond, lid Redactieoverleg)<br />
                     </p>
                     <h2 id="header-1" ref={(ref) => addHeaderRef("header-1", ref)} className="scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0">
                       Fotografie:
@@ -120,7 +120,7 @@ export default function ColofonPage() {
                     </h2>
                     <p className="text-[19px] leading-8  mb-4">
                       - Dennis Petri (Backspace)<br />
-                      - Menno van der Veen (Backspace)<br /><br />
+                      - Menno van der Veen (Backspace)<br />
                     </p>
                     <h2 id="header-1" ref={(ref) => addHeaderRef("header-1", ref)} className="scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0">
                       Met dank aan:
@@ -129,7 +129,7 @@ export default function ColofonPage() {
                       - Saskia Bos (UWV, ambtelijk secretaris centrale cliëntenraad)<br />
                       - Wonne Wolters (UWV, adviseur cliëntenparticipatie)<br />
                       - Pia Dijkstra (EMMA Communicatie, procesbegeleiding)<br />
-                      - Joris Jenster (EMMA Communicatie, procesbegeleiding en eindredactie)<br /><br />
+                      - Joris Jenster (EMMA Communicatie, procesbegeleiding en eindredactie)<br />
                     </p>
                   </div>
                 </div>
