@@ -110,6 +110,12 @@ export default function ColofonPage() {
                       - André Houting (cliëntenraad Rijnmond, lid Redactieoverleg)<br /><br />
                     </p>
                     <h2 id="header-1" ref={(ref) => addHeaderRef("header-1", ref)} className="scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0">
+                      Fotografie:
+                    </h2>
+                    <p className="text-[19px] leading-8  mb-4">
+                      - Patrick van den Hurk<br /><br />
+                    </p>
+                    <h2 id="header-1" ref={(ref) => addHeaderRef("header-1", ref)} className="scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0">
                       Vormgeving & realisatie:
                     </h2>
                     <p className="text-[19px] leading-8  mb-4">
