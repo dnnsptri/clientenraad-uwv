@@ -8,6 +8,9 @@ import BackToTop from '@/components/BackToTop'
 export const metadata: Metadata = {
   title: 'UWV Cliëntenraad - Jaarverslag 2024',
   description: 'Online jaarverslag',
+  icons: {
+    icon: '/favicon.ico',
+  },
 }
 
 export default function RootLayout({
