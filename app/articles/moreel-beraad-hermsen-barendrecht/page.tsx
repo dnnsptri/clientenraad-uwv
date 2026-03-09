@@ -3,23 +3,16 @@ import FadeInSection from '@/components/FadeInSection'
 import { ContentDivider } from '@/components/ContentDivider'
 import { TestimonialBlue } from '@/components/TestimonialBlue'
 import { TestimonialBluePhoto } from '@/components/TestimonialBluePhoto'
-import { ReadAloudButton } from '@/components/ReadAloudButton'
-
 export default function ArticleMoreelBeraadPage() {
   return (
     <main>
       <FadeInSection>
-        <HeroBlue 
+        <HeroBlue
           title="Rechtmatigheid leidt niet altijd tot rechtvaardigheid"
           description="Theo Hermsen & Marloes Barendrecht:"
           image="/images/header_theo_marloes.jpg"
         />
       </FadeInSection>
-      
-      {/* <FadeInSection>
-        Read Aloud Button and Functionality (temporarily disabled)
-        <ReadAloudButton />
-      </FadeInSection> */}
 
       <FadeInSection>
         <div className="py-4 overflow-visible">

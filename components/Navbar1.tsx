@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Book, Menu, Sunset, Trees, Zap, FileText, UserRound } from "lucide-react";
+import { Menu, FileText } from "lucide-react";
 import { getNavbarMenuItems } from "@/lib/articles";
 
 import {
@@ -187,10 +187,10 @@ const renderMenuItem = (item: MenuItem) => {
     return (
       <NavigationMenuItem key={item.title}>
         <NavigationMenuTrigger
-          className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium nav-item"
+          className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium nav-item transition-colors"
           style={{ backgroundColor: 'var(--white)' }}
-          onMouseEnter={(e) => (e.currentTarget as HTMLElement).style.backgroundColor = 'var(--white)'}
-          onMouseLeave={(e) => (e.currentTarget as HTMLElement).style.backgroundColor = 'var(--white)'}
+          onMouseEnter={(e) => { const el = e.currentTarget as HTMLElement; el.style.backgroundColor = 'var(--white)'; el.style.color = 'var(--blue)'; }}
+          onMouseLeave={(e) => { const el = e.currentTarget as HTMLElement; el.style.backgroundColor = 'var(--white)'; el.style.color = ''; }}
         >
           {item.title}
         </NavigationMenuTrigger>
@@ -211,10 +211,10 @@ const renderMenuItem = (item: MenuItem) => {
     <NavigationMenuItem key={item.title}>
       <NavigationMenuLink
         href={item.url}
-        className="bg-background hover:text-accent-foreground group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors nav-item"
+        className="bg-background group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors nav-item"
         style={{ backgroundColor: 'var(--white)' }}
-        onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'var(--white)'}
-        onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'var(--white)'}
+        onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'var(--white)'; e.currentTarget.style.color = 'var(--blue)'; }}
+        onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'var(--white)'; e.currentTarget.style.color = ''; }}
       >
         {item.title}
       </NavigationMenuLink>
@@ -239,7 +239,10 @@ const renderMobileMenuItem = (item: MenuItem) => {
   }
 
   return (
-    <a key={item.title} href={item.url} className="text-md font-semibold nav-item">
+    <a key={item.title} href={item.url} className="text-md font-semibold nav-item transition-colors"
+      onMouseEnter={(e) => { e.currentTarget.style.color = 'var(--blue)'; }}
+      onMouseLeave={(e) => { e.currentTarget.style.color = ''; }}
+    >
       {item.title}
     </a>
   );
