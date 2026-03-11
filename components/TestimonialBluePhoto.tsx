@@ -17,10 +17,10 @@ const TestimonialPhoto = ({
   const bubbleClass = variant === "blue" ? "quote-bubble" : "quote-bubble-purple"
 
   return (
-    <div className="relative my-32">
+    <div className="relative mt-4 -mb-4 lg:my-32">
       <section className="py-0 overflow-visible">
         <div className="container">
-          <div className="grid grid-cols-12 items-center gap-6 lg:gap-18">
+          <div className="grid grid-cols-12 items-center gap-0 lg:gap-18">
             {/* Quote left */}
             <div className="col-span-12 lg:col-span-5 z-10 lg:-mr-20 relative order-2 lg:order-1">
               <div className={`${bubbleClass} text-left`}>

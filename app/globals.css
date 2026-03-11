@@ -296,11 +296,26 @@ body, p, .body-text, .prose p {
   pointer-events: none;
 }
 
-/* Mobile spacing fix so following content never hides under the quote */
-@media (max-width: 768px) {
+/* Mobile: tighter quote bubbles */
+@media (max-width: 640px) {
   .quote-bubble,
   .quote-bubble-purple {
-    margin-bottom: 6rem;
+    padding: 1.5rem 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Smaller triangle on mobile */
+  .quote-bubble::before,
+  .quote-bubble-purple::before {
+    width: 48px;
+    height: 22px;
+  }
+
+  /* Tighter testimonial (text-only) blocks */
+  .testimonial-blue,
+  .testimonial-purple {
+    padding-top: 0.5rem;
   }
 }
 
