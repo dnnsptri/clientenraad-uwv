@@ -18,7 +18,7 @@ const Hero175 = () => {
               Jaarverslag 2024
             </p>
           </div> */}
-          <h1 className="w-full text-center text-5xl font-medium text-foreground md:text-7xl">
+          <h1 className="w-full text-center text-3xl font-medium text-foreground sm:text-5xl md:text-7xl">
             Werken aan kwalitatieve dienstverlening op maat
           </h1>
           <p className="text-center text-[19px] text-white">

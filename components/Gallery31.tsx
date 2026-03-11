@@ -47,7 +47,7 @@ const Gallery31 = () => {
     <section id="artikelen" className="relative h-auto overflow-hidden py-32">
       <div className="container relative flex h-full w-full flex-col items-center justify-center">
         <div className="relative z-10 flex flex-col items-center justify-center gap-5 mt-30">
-          <h1 className="text-center text-6xl">
+          <h1 className="text-center text-3xl sm:text-5xl md:text-6xl">
             Artikelen
           </h1>
           <p className=" text-center">

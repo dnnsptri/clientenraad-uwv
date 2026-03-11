@@ -6,6 +6,7 @@
 
 html, body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 /* Page container styling */
@@ -52,6 +53,7 @@ footer, .footer, [class*="footer"] {
   border-radius: 2px !important;
   transition: background-color 0.2s ease;
   padding: 12px !important;
+  box-shadow: none !important;
   min-height: 48px !important;
   display: inline-flex !important;
   align-items: center !important;
@@ -305,8 +307,14 @@ body, p, .body-text, .prose p {
 /* Light blue callout box */
 .callout-blue {
   background-color: rgba(0, 168, 255, 0.08); /* var(--light-blue) @ 8% */
-  padding: 88px;
+  padding: 2rem;
   border-radius: 6px;
+}
+
+@media (min-width: 768px) {
+  .callout-blue {
+    padding: 88px;
+  }
 }
 
 .callout-blue p {
@@ -316,8 +324,14 @@ body, p, .body-text, .prose p {
 /* Light purple callout box */
 .callout-purple {
   background-color: rgba(125, 37, 106, 0.08); /* var(--light-purple) @ 8% */
-  padding: 88px;
+  padding: 2rem;
   border-radius: 6px;
+}
+
+@media (min-width: 768px) {
+  .callout-purple {
+    padding: 88px;
+  }
 }
 
 .callout-purple p {
@@ -330,6 +344,30 @@ body, p, .body-text, .prose p {
   color: var(--white);
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
+}
+
+/* Mobile: tighter article detail pages */
+@media (max-width: 640px) {
+  /* Smaller body text */
+  .prose p.text-\[19px\] {
+    font-size: 17px;
+    line-height: 1.75;
+  }
+
+  /* Smaller intro text */
+  .prose p.intro {
+    font-size: 17px;
+  }
+
+  /* Smaller h2 headings */
+  .prose h2 {
+    font-size: 1.375rem; /* ~22px instead of 30px */
+  }
+
+  /* Tighter section gaps */
+  .prose.prose-h2\:scroll-m-10 {
+    margin-top: 0.5rem;
+  }
 }
 
 
